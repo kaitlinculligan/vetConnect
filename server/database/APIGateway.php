@@ -21,7 +21,7 @@
 
         function queryDB($q){
             //parse query for database
-            $table;
+            /*$table;
             if(strpos($q, "Client")!=FALSE){
                 $table = "Client";
             }
@@ -44,15 +44,14 @@
 
             if(strpos($q, "Pets")!=FALSE){
                 $table = "Pets";
-            }
+            }*/
 
             $result = $this->$dbConnect->query($q);
-            $result = convertResponse($result, $table);
             return $result;
         }
 
         //parse result according to query
-        function convertResponse($input, $database){
+    /*    function convertResponse($input, $database){
             $string = '';
             if($database == "Client"){
                 while($row = $input->fetch_assoc()){
@@ -92,7 +91,7 @@
             
             //this will parse the input from the database 
             //it may not actually be necessary
-        }
+        }*/
 
         function closeConnection(){
             $dbConnect->close();
