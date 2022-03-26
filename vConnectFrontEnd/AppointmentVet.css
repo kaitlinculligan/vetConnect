@@ -2,10 +2,16 @@ body{
     background-color: rgb(15, 123, 211);
 }
 
+h2{
+    color: white;
+    font-size: 30px;
+}
+
 h1{
     color: white;
     font-size: 30px;
 }
+
 
 p{
     color: white;
@@ -47,6 +53,16 @@ input[type=submit]{
     height: 45px;
 }
 
-form{
-    padding-top: 75px;
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    color: white;
+    font-size: 20px;
+}
+td{
+    color: white;
+    font-size: 15px;
 }
