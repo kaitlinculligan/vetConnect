@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <!-- created by Kaitlin Culligan, 03/25/22-->
+    <!-- This page is meant for clients to book appointments, as well as view and leave comments -->
+    <link rel="stylesheet" href="mainWebsite.css">
+    <button><a href = "LandingPage.html"">Logout</a></button>
+    <button><a href = "EditInfoClient.html"">Edit Info</a></button>
+    <div class="main">
+        <h1>VetConnect</h1>
+        <h2>Make An Appointment</h2>
+        <form>
+            <label for="date">Date(mm/dd/yyyy):</label><br>
+            <input type="text" id="date" name="date"><br>
+            <label for="time">Time(24h):</label><br>
+            <input type="text" id="time" name="time"><br>
+            <label for="pet">Pet Name:</label><br>
+            <input type="text" id="pet" name="pet"><br>
+            <label for="location">Location:</label><br>
+            <input type="text" id="location" name="location"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- the comment feature may or may not be present at release, if not present delete the following section -->
+        <h2>Previous Appointments</h2>
+        <table>
+            <tr>
+                <th>Appointment Id</th>
+                <th>Comment From Vet</th>
+                <th>Comment From You</th>
+            </tr>
+            <tr>
+                <td>Appointment 0</td>
+                <td>Fantasic Vet</td>
+                <td><form>
+                    <input type="text" id="feedback" name="feedback">
+                    <input type="submit" value="Submit">
+                </form></td>
+            </tr>
+        </table>
+    </div>
+</html>
