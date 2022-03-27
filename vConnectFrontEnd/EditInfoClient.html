@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="mainWebsite.css">
-	<style>
-	button {
-		width: 100px;
-		height: 45px;
-	}
-	</style>
-    <button ><a href="AppointmentClient.html">Make An Appointment</a></button>
-    <div class="main">
-        <h1>VetConnect</h1>
-        <h2>Client Edit</h2>
-        <form>
-            <label for="location">Location:</label><br>
-            <input type="text" id="location" name="location"><br>
-            <input type="submit" value="Submit">
-        </form>
-        <h1>Add Pet</h1>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="species">Species:</label><br>
-            <input type="text" id="species" name="species"><br>
-            <input type="submit" value="Submit">
-        </form>
-        <h1>Delete Pet</h1>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="species">Species:</label><br>
-            <input type="text" id="species" name="species"><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+	<head>
+		<title>VetConnect - User Info</title>
+		<link rel="stylesheet" href="mainWebsite.css">
+	</head>
+	<body>
+		<div class="header">
+			<h1 class="websiteName">VetConnect</h1>
+			<ul class="options">
+				<li><button><a href = "LandingPage.html">Logout</a></button></li>
+				<li><button style="width: 170px;"><a href="AppointmentClient.html">Make An Appointment</a></button><li>
+			</ul>
+		</div>
+		<div class="main">
+			<h2>Client Edit</h2>
+			<form>
+				<label for="location">Location:</label><br>
+				<input type="text" id="location" name="location"><br>
+				<input type="submit" value="Submit">
+			</form>
+			<h1>Add Pet</h1>
+			<form>
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name"><br>
+				<label for="species">Species:</label><br>
+				<input type="text" id="species" name="species"><br>
+				<input type="submit" value="Submit">
+			</form>
+			<h1>Delete Pet</h1>
+			<form>
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name"><br>
+				<label for="species">Species:</label><br>
+				<input type="text" id="species" name="species"><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
 </html>
