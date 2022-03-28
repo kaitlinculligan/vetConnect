@@ -2,6 +2,19 @@ DROP DATABASE IF EXISTS VET_CONNECT;
 CREATE DATABASE VET_CONNECT; 
 USE VET_CONNECT;
  
+ 
+ DROP TABLE IF EXISTS User;
+ CREATE TABLE User
+ (
+ id int(11) NOT NULL AUTO_INCREMENT,
+ name varchar(25),
+ password char(25),
+ email varchar(100) NOT NULL,
+ address varchar(25),
+ type varchar(25),
+ PRIMARY KEY (id)
+ );
+ 
  DROP TABLE IF EXISTS Client;
  CREATE TABLE Client
  (
