@@ -8,14 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
   $confirm_password = trim($_POST["confirm_password"]);
   $type =  trim($_POST["type"]);
   $password_hash = password_hash($password, PASSWORD_BCRYPT);
-   if($query = $db->prepare("SELECT * FROM users WHERE email = ?")) {
+   if($query = $db->prepare("SELECT * FROM user WHERE email = ?")) {
      $error = '';
      // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use
     $query->bind_param('s', $email);
     $query->execute();
   // Store the result so we can check if the account exists in the database.
     $query->store_result();
-     if ($query->num_rows > e) {
+     if ($query->num_rows > 0) {
         $error .= '<p class="error">The email address is already registered!</p>';
       } else {
         // Validate password
@@ -60,8 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
            <div class="col-md-12">
            <h2>Register</h2>
            <p>Please fill this form to create an account.</p>
-           <?php echo $success; ?>
-           <?php echo $error; ?>
            <form action="" method="post">
                <div class="form-group">
                    <label>Full Name</label>
@@ -77,6 +75,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                </div>
                <div class="form-group">
                    <label>Confirm Password</label>
+                   <input type="password" name="confirm_password" class="form-control" required>
+               </div>
+               <div class="form-group">
+                   <label>Type(vet or client)</label>
+                   <input type="text" name="type" class="form-control" required>
+               </div>
                    <div class="form-group">
     <input type="submit" name="submit" class="btn btn-primary" value="Submit">
 </div>
