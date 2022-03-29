@@ -5,25 +5,30 @@ $error = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
+
    // validate if email is empty
     if (empty($email)) {
         $error .= '<p class="error">Please enter email.</p>';
     // validate if password is empty
+    }
     if (empty($password)) {
         $error .= '<p class="error">Please enter your password.</p>';
     }
+
     if (empty($error)) {
-       if ($query = $db->prepare("SELECT * FROM user WHERE email = ?")) {
+       if ($query = $db->prepare("SELECT * FROM User WHERE email = ?")) {
+
             $query->bind_param('s', $email);
             $query->execute();
-              $row = $query->fetch();
+            
+            $row = $query->fetch();
+       
             if ($row) {
-                if (password_verify($password, $row['password'])) {
+                if (!empty($row) && password_verify($password, $row['password'])) {
                     $_SESSION["userid"] = $row['id'];
-                    $_SESSION["user"] = $row;
                     $_SESSION['type'] = $row['type'];
                     // Redirect the user to welcome page
-                    header('Location: //localhost/my_folder/AppointmentClient.php');
+                    header('location: appointmentVet.php');
                     exit;
                   } else {
                     $error .= '<p class="error">The password is not valid.</p>';
@@ -36,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     // Close connection
     mysqli_close($db);
     }
-}
+
 }
     ?>
     <!DOCTYPE html>
@@ -56,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                                 <form action="" method="post">
                                        <div class="form-group">
                                               <label>Email Address</label>
-                                              <input type="email" name="email" class="form-control" required />
+                                              <input type="email" name="email" class="form-control" required>
                                        </div>
                                        <div class="form-group">
                                               <label>Password</label>
