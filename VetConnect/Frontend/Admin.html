@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <!-- created by Kaitlin Culligan, 03/25/22-->
+    <!-- This page is meant for admins to access user information and comments -->
+    <!-- it is unlikely to be used in actual release-->
+	<head>
+		<link rel="stylesheet" href="mainWebsite.css">
+		<title>VetConnect Admin Page</title>
+	</head>
+    <body>
+		<div class="header">
+			<h1 class="websiteName">VetConnect</h1>
+		</div>
+		
+		<div class="main">
+			<h2>Comments</h2>
+			<table>
+				<tr>
+					<th>Comment</th>
+					<th>User</th>
+					<th>Delete?</th>
+				</tr>
+				<tr>
+					<td>Fantastic Vet</td>
+					<td>username</td>
+					<td>
+						<form>              
+							<input type="checkbox" id="delete" name="delete">
+							<input type="submit" value="Submit">
+						</form>
+					</td>
+				</tr>
+			</table>
+
+			<h2>Users</h2>
+			<table>
+				<tr>
+					<th>User</th>
+					<th>Edit Info</th>
+					<th>Delete?</th>
+				</tr>
+				<tr>
+					<td>username</td>
+					<td><button><a href = "EditInfo.html"">Edit</a></button></td>
+					<td>
+						<input type="checkbox" id="delete" name="delete">
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
+		  
+		</div>
+	</body>
+</html>
