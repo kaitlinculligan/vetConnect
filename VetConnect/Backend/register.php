@@ -38,13 +38,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
            } else {
            $error .= '<p class="error">Something went wrong!</p>';
            }
-           }
-           }
-           }
-           $query->close();
            $insertQuery->close();
+          }
+         }
+        }
+           $query->close();
            // Close DB connection
            mysqli_close($db);
+           header('location: login.php');    
            }
            ?>
            <!DOCTYPE html>
