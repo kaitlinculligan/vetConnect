@@ -1,0 +1,996 @@
+{
+  "id": "d47b4632-f508-4144-8965-599336f19f4a",
+  "version": "2.0",
+  "name": "SENG401",
+  "url": "http://vetconnect.marishtech.ca/",
+  "tests": [{
+    "id": "446d6949-93c9-409a-aef5-d5cc3ee5ba61",
+    "name": "Clicking on Book Appointment takes you to the booking page",
+    "commands": [{
+      "id": "ada7757b-e5cf-4d7e-9195-d9d937a683bc",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17b4444b-7504-4556-96c4-476d1aa4b213",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c6bee68-0481-4620-8264-6b7743c4daaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ast-custom-button",
+      "targets": [
+        ["css=.ast-custom-button", "css:finder"],
+        ["xpath=//div[@id='ast-desktop-header']/div/div/div/div/div[2]/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6baf08f7-b51c-4f3c-bf51-008c60a6e667",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.entry-title",
+      "targets": [
+        ["css=.entry-title", "css:finder"],
+        ["xpath=//article[@id='post-40']/header/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Book Appointment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7433e1ec-a707-4076-87e4-1bcd46d0a367",
+    "name": "Book an appointment and miss a field",
+    "commands": [{
+      "id": "a727003e-02a1-4a24-988c-3d47fce31572",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9996f2ed-1f1b-4423-abe6-0dc45c013e05",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f72d12f-42ef-4a76-bee1-b7fb13f75264",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ast-custom-button",
+      "targets": [
+        ["css=.ast-custom-button", "css:finder"],
+        ["xpath=//div[@id='ast-desktop-header']/div/div/div/div/div[2]/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13100f83-ef5c-4d54-af8e-32542c9deac8",
+      "comment": "",
+      "command": "click",
+      "target": "id=fieldname3_1",
+      "targets": [
+        ["id=fieldname3_1", "id"],
+        ["name=fieldname3_1", "name"],
+        ["css=#fieldname3_1", "css:finder"],
+        ["xpath=//input[@id='fieldname3_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-1']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "508b97cd-422a-46c2-8166-978fadfc7c4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=fieldname3_1",
+      "targets": [
+        ["id=fieldname3_1", "id"],
+        ["name=fieldname3_1", "name"],
+        ["css=#fieldname3_1", "css:finder"],
+        ["xpath=//input[@id='fieldname3_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-1']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Kunal Dhawan"
+    }, {
+      "id": "4ae48c68-12ed-42de-9d25-f6e0d6685d28",
+      "comment": "",
+      "command": "click",
+      "target": "id=email_1",
+      "targets": [
+        ["id=email_1", "id"],
+        ["name=email_1", "name"],
+        ["css=#email_1", "css:finder"],
+        ["xpath=//input[@id='email_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-2']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "804a974b-8c61-479b-856b-b186b28f6558",
+      "comment": "",
+      "command": "click",
+      "target": "id=fieldname4_1",
+      "targets": [
+        ["id=fieldname4_1", "id"],
+        ["name=fieldname4_1", "name"],
+        ["css=#fieldname4_1", "css:finder"],
+        ["xpath=//input[@id='fieldname4_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-3']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ce9982b-de90-4900-a4d6-c5b2ea550995",
+      "comment": "",
+      "command": "type",
+      "target": "id=fieldname4_1",
+      "targets": [
+        ["id=fieldname4_1", "id"],
+        ["name=fieldname4_1", "name"],
+        ["css=#fieldname4_1", "css:finder"],
+        ["xpath=//input[@id='fieldname4_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-3']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "111, University Drive"
+    }, {
+      "id": "f3e793f3-33c2-404a-87ee-0db23146954e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pbSubmit",
+      "targets": [
+        ["css=.pbSubmit", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fieldlist_1']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31739853-28ac-495a-8a02-853e0814804a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pbSubmit",
+      "targets": [
+        ["css=.pbSubmit", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fieldlist_1']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c5cefcf-26dd-4dcb-9838-1b885d22bf27",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pbSubmit",
+      "targets": [
+        ["css=.pbSubmit", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fieldlist_1']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a5bde0-1e33-41a6-9fe8-c002f7f4f100",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.cpefb_error:nth-child(10)",
+      "targets": [
+        ["css=.cpefb_error:nth-child(10)", "css:finder"],
+        ["xpath=//div[@id='field_1-0']/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c1f3af9e-a60c-4f02-aabb-3e4d93ead932",
+    "name": "Register as a vet successfully ",
+    "commands": [{
+      "id": "da45ceb1-a311-426c-aeaa-6fe2f9cf660f",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b1e769c-dace-46ad-9a65-9ae7f1c508d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6cebfe3-88d7-4790-8503-5a1a67848319",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register as Vet",
+      "targets": [
+        ["linkText=Register as Vet", "linkText"],
+        ["css=#menu-item-572 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Register as Vet')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-572']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://vetconnect.marishtech.ca/register/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register as Vet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "382bd53a-8cd5-437a-b5b7-4f2eb894e950",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_1",
+      "targets": [
+        ["id=wpforms-553-field_1", "id"],
+        ["name=wpforms[fields][1][first]", "name"],
+        ["css=#wpforms-553-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e531c13-0a58-4c0d-9902-0a2643cdb304",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_1",
+      "targets": [
+        ["id=wpforms-553-field_1", "id"],
+        ["name=wpforms[fields][1][first]", "name"],
+        ["css=#wpforms-553-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kunal"
+    }, {
+      "id": "fecfd43b-2b4f-4dd5-a301-7c5488e247c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_1-last",
+      "targets": [
+        ["id=wpforms-553-field_1-last", "id"],
+        ["name=wpforms[fields][1][last]", "name"],
+        ["css=#wpforms-553-field_1-last", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1-last']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0b5f577-7c39-4d34-a9e0-556215a9e2ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_1-last",
+      "targets": [
+        ["id=wpforms-553-field_1-last", "id"],
+        ["name=wpforms[fields][1][last]", "name"],
+        ["css=#wpforms-553-field_1-last", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1-last']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Dhawan"
+    }, {
+      "id": "f03e199c-7786-483d-88b3-943df206247b",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_2",
+      "targets": [
+        ["id=wpforms-553-field_2", "id"],
+        ["name=wpforms[fields][2]", "name"],
+        ["css=#wpforms-553-field_2", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_2-container']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8805f1c7-d094-4b70-9b61-7db52a8c92ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_2",
+      "targets": [
+        ["id=wpforms-553-field_2", "id"],
+        ["name=wpforms[fields][2]", "name"],
+        ["css=#wpforms-553-field_2", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_2-container']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "kdhawan@ucalgary.ca"
+    }, {
+      "id": "e269b352-f392-4a5b-a3e6-c6950f5f7717",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_9",
+      "targets": [
+        ["id=wpforms-553-field_9", "id"],
+        ["name=wpforms[fields][9]", "name"],
+        ["css=#wpforms-553-field_9", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_9']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_9-container']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ad36855-0f98-4899-9102-97b7469b6a59",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_9",
+      "targets": [
+        ["id=wpforms-553-field_9", "id"],
+        ["name=wpforms[fields][9]", "name"],
+        ["css=#wpforms-553-field_9", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_9']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_9-container']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1234567890"
+    }, {
+      "id": "87cb2121-0a81-46fc-aa2c-a5b3b283bdfe",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_4_1",
+      "targets": [
+        ["id=wpforms-553-field_4_1", "id"],
+        ["name=wpforms[fields][4][]", "name"],
+        ["css=#wpforms-553-field_4_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_4_1']", "xpath:attributes"],
+        ["xpath=//ul[@id='wpforms-553-field_4']/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b3b61c1-e4d7-41bc-b8fc-e48ad8d3f2e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wpforms-553-field_4 > .choice-2",
+      "targets": [
+        ["css=#wpforms-553-field_4 > .choice-2", "css:finder"],
+        ["xpath=//ul[@id='wpforms-553-field_4']/li[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Tuesday')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be05f661-8731-4427-83d4-c93ecd303b1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_4_2",
+      "targets": [
+        ["id=wpforms-553-field_4_2", "id"],
+        ["css=#wpforms-553-field_4_2", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_4_2']", "xpath:attributes"],
+        ["xpath=//ul[@id='wpforms-553-field_4']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1da79dd-c3ba-4fb1-a525-5921b20a92ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_4_3",
+      "targets": [
+        ["id=wpforms-553-field_4_3", "id"],
+        ["css=#wpforms-553-field_4_3", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_4_3']", "xpath:attributes"],
+        ["xpath=//ul[@id='wpforms-553-field_4']/li[3]/input", "xpath:idRelative"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61431acc-7c8e-49ad-bb9d-6cc262315889",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_8_1",
+      "targets": [
+        ["id=wpforms-553-field_8_1", "id"],
+        ["name=wpforms[fields][8]", "name"],
+        ["css=#wpforms-553-field_8_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_8_1']", "xpath:attributes"],
+        ["xpath=//ul[@id='wpforms-553-field_8']/li/input", "xpath:idRelative"],
+        ["xpath=//div[5]/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9c205d4-9603-4c9d-bc19-b1d0595696df",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_5_1",
+      "targets": [
+        ["id=wpforms-553-field_5_1", "id"],
+        ["name=wpforms[fields][5]", "name"],
+        ["css=#wpforms-553-field_5_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_5_1']", "xpath:attributes"],
+        ["xpath=//ul[@id='wpforms-553-field_5']/li/input", "xpath:idRelative"],
+        ["xpath=//div[6]/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a7206d-4eb2-49b1-b7b9-6ed61bc087de",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_7",
+      "targets": [
+        ["id=wpforms-553-field_7", "id"],
+        ["name=wpforms[fields][7]", "name"],
+        ["css=#wpforms-553-field_7", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-553-field_7']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_7-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e205e8a3-5ec9-4acb-b66c-f358a48ee070",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_7",
+      "targets": [
+        ["id=wpforms-553-field_7", "id"],
+        ["name=wpforms[fields][7]", "name"],
+        ["css=#wpforms-553-field_7", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-553-field_7']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_7-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "University of Calgary"
+    }, {
+      "id": "e995557e-5668-4871-ba5c-b2b992a81498",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-submit-553",
+      "targets": [
+        ["id=wpforms-submit-553", "id"],
+        ["name=wpforms[submit]", "name"],
+        ["css=#wpforms-submit-553", "css:finder"],
+        ["xpath=//button[@id='wpforms-submit-553']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-553']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit for Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfcb2a02-66c4-4d0a-a684-ebff5ab64060",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.elementor-element-6650bee .elementor-widget-wrap",
+      "targets": [
+        ["css=.elementor-element-6650bee .elementor-widget-wrap", "css:finder"],
+        ["xpath=//section[@id='dental_contact_us']/div[3]/div/div/div/div/section[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/section[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7098ee16-c44a-4386-967f-3ee2a06c3523",
+    "name": "Register as a vet unsuccessfully",
+    "commands": [{
+      "id": "9192564b-87e7-42d3-92ee-8b9f6891b73d",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32f42e97-b85e-4c7a-9b74-48c7085e1ac0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec304f6f-af6e-4574-8066-5f73a362138f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register as Vet",
+      "targets": [
+        ["linkText=Register as Vet", "linkText"],
+        ["css=#menu-item-572 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Register as Vet')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-572']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://vetconnect.marishtech.ca/register/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register as Vet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da50c4d6-a8cf-49fa-bba9-be1b03c80a7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_1",
+      "targets": [
+        ["id=wpforms-553-field_1", "id"],
+        ["name=wpforms[fields][1][first]", "name"],
+        ["css=#wpforms-553-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a52cd8e7-069c-4378-93a2-275fbd2625f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_1",
+      "targets": [
+        ["id=wpforms-553-field_1", "id"],
+        ["name=wpforms[fields][1][first]", "name"],
+        ["css=#wpforms-553-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kunal"
+    }, {
+      "id": "fbc81196-d7d9-4a0c-995f-de7219ed0638",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_1-last",
+      "targets": [
+        ["id=wpforms-553-field_1-last", "id"],
+        ["name=wpforms[fields][1][last]", "name"],
+        ["css=#wpforms-553-field_1-last", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1-last']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "623a3176-2982-4312-8491-86c0f750d7d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_1-last",
+      "targets": [
+        ["id=wpforms-553-field_1-last", "id"],
+        ["name=wpforms[fields][1][last]", "name"],
+        ["css=#wpforms-553-field_1-last", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_1-last']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_1-container']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Dhawan"
+    }, {
+      "id": "65d96a34-136e-42eb-b269-ca81e3b5ec88",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_9",
+      "targets": [
+        ["id=wpforms-553-field_9", "id"],
+        ["name=wpforms[fields][9]", "name"],
+        ["css=#wpforms-553-field_9", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_9']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_9-container']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3505b935-c585-42bf-955d-755be91138b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-553-field_9",
+      "targets": [
+        ["id=wpforms-553-field_9", "id"],
+        ["name=wpforms[fields][9]", "name"],
+        ["css=#wpforms-553-field_9", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_9']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_9-container']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1234567890"
+    }, {
+      "id": "72813382-5122-45cc-bf0f-28253a309fa7",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_8_1",
+      "targets": [
+        ["id=wpforms-553-field_8_1", "id"],
+        ["name=wpforms[fields][8]", "name"],
+        ["css=#wpforms-553-field_8_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_8_1']", "xpath:attributes"],
+        ["xpath=//ul[@id='wpforms-553-field_8']/li/input", "xpath:idRelative"],
+        ["xpath=//div[5]/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3940fcc-3c4f-4949-880f-d2a83b8bf8ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-553-field_5_2",
+      "targets": [
+        ["id=wpforms-553-field_5_2", "id"],
+        ["css=#wpforms-553-field_5_2", "css:finder"],
+        ["xpath=//input[@id='wpforms-553-field_5_2']", "xpath:attributes"],
+        ["xpath=//ul[@id='wpforms-553-field_5']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/ul/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b22418c-7c1c-4bb4-8b5e-9ef5703382cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-submit-553",
+      "targets": [
+        ["id=wpforms-submit-553", "id"],
+        ["name=wpforms[submit]", "name"],
+        ["css=#wpforms-submit-553", "css:finder"],
+        ["xpath=//button[@id='wpforms-submit-553']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-553']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit for Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd8cb7d1-af5c-4f42-b660-ca1b87b9d405",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=wpforms-submit-553",
+      "targets": [
+        ["id=wpforms-submit-553", "id"],
+        ["name=wpforms[submit]", "name"],
+        ["css=#wpforms-submit-553", "css:finder"],
+        ["xpath=//button[@id='wpforms-submit-553']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-553']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit for Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23b56196-7351-4367-9199-9316e06bd89b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=wpforms-submit-553",
+      "targets": [
+        ["id=wpforms-submit-553", "id"],
+        ["name=wpforms[submit]", "name"],
+        ["css=#wpforms-submit-553", "css:finder"],
+        ["xpath=//button[@id='wpforms-submit-553']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-553']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit for Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34f3d380-587d-44af-8951-6ee3a81d5d5c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=wpforms-553-field_2-error",
+      "targets": [
+        ["id=wpforms-553-field_2-error", "id"],
+        ["css=#wpforms-553-field_2-error", "css:finder"],
+        ["xpath=//label[@id='wpforms-553-field_2-error']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-553-field_2-container']/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'This field is required.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "faf23c06-216a-4289-9530-445232aab2bc",
+    "name": "Clicking on the register as a vet redirects to the register page",
+    "commands": [{
+      "id": "6980690b-334e-4cb9-99f3-fe4d09165f8b",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27c4fbbd-f8f7-4bc7-9913-1e1ac4ae3968",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddb241ba-47ba-4920-b63e-d81d4603ed56",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register as Vet",
+      "targets": [
+        ["linkText=Register as Vet", "linkText"],
+        ["css=#menu-item-572 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Register as Vet')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-572']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://vetconnect.marishtech.ca/register/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register as Vet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "460de6c8-bed7-4ffa-9f09-6a6386b8b787",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.elementor-element-6650bee .elementor-widget-wrap",
+      "targets": [
+        ["css=.elementor-element-6650bee .elementor-widget-wrap", "css:finder"],
+        ["xpath=//section[@id='dental_contact_us']/div[3]/div/div/div/div/section[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/section[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cdcf901c-93da-4a59-a9f7-eee752d11dd8",
+    "name": "Verifying that captcha is present during booking",
+    "commands": [{
+      "id": "325a9e70-c1fd-4cdb-bdc8-a156ee9295f8",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91184762-9923-41e7-9607-bc0d4ff82264",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eae0a67c-32ff-41a4-b6e6-ff76275bfb88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ast-custom-button",
+      "targets": [
+        ["css=.ast-custom-button", "css:finder"],
+        ["xpath=//div[@id='ast-desktop-header']/div/div/div/div/div[2]/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b6ebe76-5a84-4074-92c2-082f4d50a655",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.captcha",
+      "targets": [
+        ["css=.captcha", "css:finder"],
+        ["xpath=//div[@id='fieldlist_1']/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d81cb32e-736c-42f1-8a34-c4c3d8907af4",
+    "name": "Booking an appointment successfully ",
+    "commands": [{
+      "id": "5b900dc2-da45-4a6d-a5ee-4e3b6b57c14a",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f99874f0-3e03-48c0-bbf8-ab01860abdef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6e99767-120f-4fa9-b7e0-bb89a3e813a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ast-custom-button",
+      "targets": [
+        ["css=.ast-custom-button", "css:finder"],
+        ["xpath=//div[@id='ast-desktop-header']/div/div/div/div/div[2]/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76d5a13a-00c1-4bf5-918c-100b39396a91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=14:00",
+      "targets": [
+        ["linkText=14:00", "linkText"],
+        ["css=.availableslot:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'14:00')]", "xpath:link"],
+        ["xpath=//div[@id='field_1-0']/div/div[3]/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[20]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'14:00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b342970f-da74-4d76-92c5-b9e945e2fe95",
+      "comment": "",
+      "command": "click",
+      "target": "id=fieldname3_1",
+      "targets": [
+        ["id=fieldname3_1", "id"],
+        ["name=fieldname3_1", "name"],
+        ["css=#fieldname3_1", "css:finder"],
+        ["xpath=//input[@id='fieldname3_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-1']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8db9a0b7-7b62-49ce-ab0b-e99eaf2ee514",
+      "comment": "",
+      "command": "type",
+      "target": "id=fieldname3_1",
+      "targets": [
+        ["id=fieldname3_1", "id"],
+        ["name=fieldname3_1", "name"],
+        ["css=#fieldname3_1", "css:finder"],
+        ["xpath=//input[@id='fieldname3_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-1']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Arindam Mishra"
+    }, {
+      "id": "bf4454f0-9333-4b9b-abb1-ba1b537882c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=email_1",
+      "targets": [
+        ["id=email_1", "id"],
+        ["name=email_1", "name"],
+        ["css=#email_1", "css:finder"],
+        ["xpath=//input[@id='email_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-2']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1311979-fd47-4cc4-87c2-d8c9ef0790c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email_1",
+      "targets": [
+        ["id=email_1", "id"],
+        ["name=email_1", "name"],
+        ["css=#email_1", "css:finder"],
+        ["xpath=//input[@id='email_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-2']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "arimishra1999@gmail.com"
+    }, {
+      "id": "eb06afb1-dccf-43f6-b166-e7462125ea96",
+      "comment": "",
+      "command": "click",
+      "target": "id=fieldname4_1",
+      "targets": [
+        ["id=fieldname4_1", "id"],
+        ["name=fieldname4_1", "name"],
+        ["css=#fieldname4_1", "css:finder"],
+        ["xpath=//input[@id='fieldname4_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-3']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8c51f64-ebaa-4184-a4fa-3c17eb0485c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=fieldname4_1",
+      "targets": [
+        ["id=fieldname4_1", "id"],
+        ["name=fieldname4_1", "name"],
+        ["css=#fieldname4_1", "css:finder"],
+        ["xpath=//input[@id='fieldname4_1']", "xpath:attributes"],
+        ["xpath=//div[@id='field_1-3']/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "111,University Drive, Calgary, NW"
+    }, {
+      "id": "54606192-2fea-4811-af67-42d6a0f0815a",
+      "comment": "",
+      "command": "click",
+      "target": "id=hdcaptcha_cp_appbooking_post_1",
+      "targets": [
+        ["id=hdcaptcha_cp_appbooking_post_1", "id"],
+        ["name=hdcaptcha_cp_appbooking_post", "name"],
+        ["css=#hdcaptcha_cp_appbooking_post_1", "css:finder"],
+        ["xpath=//input[@id='hdcaptcha_cp_appbooking_post_1']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldlist_1']/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37189ff3-f8fc-45cd-b78f-f4447ef46466",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pbSubmit",
+      "targets": [
+        ["css=.pbSubmit", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fieldlist_1']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'BOOK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29588db4-0d54-4e6d-8035-9b45b3c630b9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=hdcaptcha_error_1",
+      "targets": [
+        ["id=hdcaptcha_error_1", "id"],
+        ["css=#hdcaptcha_error_1", "css:finder"],
+        ["xpath=//div[@id='hdcaptcha_error_1']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldlist_1']/div/div[5]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "48dd7b6d-0b8c-4c87-8bc5-3cc2f3a12ead",
+    "name": "Clicking on homepage redirects to the landing page",
+    "commands": [{
+      "id": "6cdda7f8-20da-4550-92a4-6b972d0046a2",
+      "comment": "",
+      "command": "open",
+      "target": "http://vetconnect.marishtech.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a073d44b-6531-4266-8cc2-58024e81d014",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x753",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0c8a719-e643-4496-b1c8-cfa01b391ba1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ast-custom-button",
+      "targets": [
+        ["css=.ast-custom-button", "css:finder"],
+        ["xpath=//div[@id='ast-desktop-header']/div/div/div/div/div[2]/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e819031f-f17c-40fe-ad01-b3dd0612df98",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#menu-item-465 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-465']/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://vetconnect.marishtech.ca/'])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bc9bf93-448b-463c-8205-b0b82b36280a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.elementor-element-0c4fc0a .elementor-widget-wrap",
+      "targets": [
+        ["css=.elementor-element-0c4fc0a .elementor-widget-wrap", "css:finder"],
+        ["xpath=//article[@id='post-485']/div/div/div/div/section/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "960cd961-ca14-4a0c-a160-d78d77f97bf7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://vetconnect.marishtech.ca/"],
+  "plugins": []
+}
